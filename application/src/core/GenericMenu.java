@@ -107,7 +107,10 @@ public class GenericMenu {
 		Boolean quit = false;
 
 		while (!quit) {
-			// show the menu items every time
+			// print instructions
+			System.out.println("--- Options ---");
+			
+			// print the menu items every time
 			printMenuItems();
 
 			// allow for input
