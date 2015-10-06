@@ -47,7 +47,7 @@ public class GenericMenu {
 	 * Prints all the existing menu items in the console in the format [key]:
 	 * name
 	 */
-	public void printMenuItems() {
+	private void printMenuItems() {
 		for (MenuItem menuItem : menuItems) {
 			System.out.println("[" + menuItem.getKey() + "]: " + menuItem.getName());
 		}
@@ -62,10 +62,11 @@ public class GenericMenu {
 	 *             exception when there is no matching menu item found for the
 	 *             given key
 	 */
-	public void runCommand(String key) throws Exception {
+	private void runCommand(String key) throws Exception {
 		ArrayList<MenuItem> filteredMenuItems = new ArrayList<MenuItem>();
-		
-		// filter through the menu items, checking if the given key corresponds to a MenuItem
+
+		// filter through the menu items, checking if the given key corresponds
+		// to a MenuItem
 		for (MenuItem i : menuItems) {
 			if (i.getKey().toLowerCase().equals(key))
 				filteredMenuItems.add(i);
@@ -87,7 +88,7 @@ public class GenericMenu {
 	 * 
 	 * @return returns the input as String
 	 */
-	public String scanLine() {
+	private String scanLine() {
 		System.out.print("> ");
 		return scanner.nextLine();
 	}
@@ -97,7 +98,7 @@ public class GenericMenu {
 	 * be in there Beware: default menu items should always be added to the
 	 * input switch
 	 */
-	public void addDefaultMenuItems() {
+	private void addDefaultMenuItems() {
 		addMenuItem("Q", "Quit");
 	}
 
@@ -109,7 +110,7 @@ public class GenericMenu {
 		while (!quit) {
 			// print instructions
 			System.out.println("--- Options ---");
-			
+
 			// print the menu items every time
 			printMenuItems();
 
@@ -120,7 +121,7 @@ public class GenericMenu {
 			System.out.println("\nEntered " + option);
 
 			option = option.toLowerCase();
-			
+
 			// act depending on the input
 			try {
 				switch (option) {
