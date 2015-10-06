@@ -67,7 +67,7 @@ public class GenericMenu {
 		
 		// filter through the menu items, checking if the given key corresponds to a MenuItem
 		for (MenuItem i : menuItems) {
-			if (i.getKey().equals(key))
+			if (i.getKey().toLowerCase().equals(key))
 				filteredMenuItems.add(i);
 		}
 
@@ -119,9 +119,11 @@ public class GenericMenu {
 			// show the input
 			System.out.println("\nEntered " + option);
 
+			option = option.toLowerCase();
+			
 			// act depending on the input
 			try {
-				switch (option.toLowerCase()) {
+				switch (option) {
 				case "q":
 					System.out.println("Quitting application...");
 					quit = true;
