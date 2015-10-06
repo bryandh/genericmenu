@@ -2,8 +2,6 @@ package core;
 
 import java.util.ArrayList;
 import java.util.Scanner;
-import java.util.stream.Collectors;
-import java.util.stream.Stream;
 
 public class GenericMenu {
 	private ArrayList<MenuItem> menuItems;
