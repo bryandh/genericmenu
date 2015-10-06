@@ -64,7 +64,7 @@ public class GenericMenu {
 	 *             exception when there is no matching menu item found for the
 	 *             given key
 	 */
-	public void runCommand2(String key) throws Exception {
+	public void runCommand(String key) throws Exception {
 		ArrayList<MenuItem> filteredMenuItems = new ArrayList<MenuItem>();
 		
 		// filter through the menu items, checking if the given key corresponds to a MenuItem
