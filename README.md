@@ -35,6 +35,7 @@ As explained in the previous code example, there are multiple ways to bind code 
 The Lambda expression way ( () -> { // Code here. } ) is only usable with Java version 1.8 or higher.
 
 **Adding a menu item takes three parameters:**
+
 1. The String that has to be entered to execute the menu item.
 2. Second; The name of the menu item.
 3. The code that will be run when the menu item gets selected, either Lambda function or a Runnable.
