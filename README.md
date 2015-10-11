@@ -36,6 +36,6 @@ The Lambda expression way ( () -> { // Code here. } ) is only usable with Java v
 
 **Adding a menu item takes three parameters:**
 
-1. The String that has to be entered to execute the menu item.
+1. The value that has to be entered to execute the menu item.
 2. The name of the menu item.
 3. The code that will be run when the menu item gets selected, either Lambda function or a Runnable.
